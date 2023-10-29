@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  dchs_motion_sensors:
+    dependency: transitive
+    description:
+      name: dchs_motion_sensors
+      sha256: b2d7254a0fa07912daf20771857b96acc9c815b81e61f0d5b9a449f8834b70c0
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -62,6 +70,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_cube:
+    dependency: transitive
+    description:
+      name: flutter_cube
+      sha256: "71cf679a251166eb97f86751c56582b09abdbf859485fbf60524948813914c3b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.1"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -107,6 +123,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  panorama_viewer:
+    dependency: "direct main"
+    description:
+      name: panorama_viewer
+      sha256: abca797b535ef0b5ca68a5931110d13bcd491bfec8b8f4edd226782eb8531005
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   path:
     dependency: transitive
     description:
@@ -186,3 +210,4 @@ packages:
     version: "0.1.4-beta"
 sdks:
   dart: ">=3.1.5 <4.0.0"
+  flutter: ">=1.17.0"
