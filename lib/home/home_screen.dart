@@ -1,34 +1,46 @@
 import 'package:flutter/material.dart';
-import 'package:panorama_viewer/panorama_viewer.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  double _lon = 0;
+  double _lat = 0;
+  double _tilt = 0;
+  final int _panoId = 0;
+  List<Image> panoList = [
+    Image.asset('assets/panorama.jpg'),
+  ];
+
+  void onViewChanged(longitude, latitude, tilt) {
+    setState(() {
+      _lon = longitude;
+      _lat = latitude;
+      _tilt = tilt;
+    });
+  }
+
+  Widget hotspotButton(
+      {String? text, IconData? icon, VoidCallback? onPresseed}) {
+    return const Column();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Panorama360 view on Flutter"),
+        title: const Text("Panorama 360 view Flutter"),
       ),
-      body: Center(
-        child: PanoramaViewer(
-          animSpeed: 1,
-          hotspots: [
-            Hotspot(
-              latitude: 0,
-              longitude: 0,
-              name: "demo",
-              widget: ElevatedButton(
-                onPressed: () {
-                  debugPrint("Hello");
-                },
-                child: const Text("Hello"),
-              ),
-            )
-          ],
-          animReverse: true,
-          child: Image.asset('assets/panorama.jpg'),
-        ),
+      body: Stack(
+        children: [
+          Text(
+            '${_lon.toStringAsFixed(3)}, ${_lat.toStringAsFixed(3)}. ${_tilt.toStringAsFixed(3)}',
+          )
+        ],
       ),
     );
   }
