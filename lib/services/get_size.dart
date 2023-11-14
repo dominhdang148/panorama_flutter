@@ -1,0 +1,3 @@
+class AppImageSize{
+  static getWid
+}

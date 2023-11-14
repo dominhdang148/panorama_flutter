@@ -18,6 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
           child: PanoramaViewer(
         animSpeed: 1.0,
+        sensorControl: SensorControl.orientation,
+        hotspots: const [],
         child: Image.asset('assets/panorama_0.jpg'),
       )),
     );
