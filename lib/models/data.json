@@ -1,0 +1,68 @@
+{
+  "scenes": [
+    {
+      "id": "8b49a7a9-b3ac-4f68-a8c9-6b2966851071",
+      "tourId": "bd2323e9-e03f-40a9-db2f-08dbded32379",
+      "title": "A1 (2)",
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "urlPreview": "uploads/tours/bd2323e9e03f40a9db2f08dbded32379/b69b7122ac094377ac7884fc87e085cf.jpg",
+      "urlImage": "uploads/tours/bd2323e9e03f40a9db2f08dbded32379/53cfed9c27564b50a65c9437feaf8800.jpg",
+      "urlAudio": "",
+      "linkHotspots": [
+        {
+          "id": "18970a8f-8ac8-49be-95db-8c326d761d3d",
+          "sceneId": "8b49a7a9-b3ac-4f68-a8c9-6b2966851071",
+          "linkId": "6cd762d9-88ab-4d81-bdc7-514726db4aaf",
+          "sceneIndex": 2,
+          "title": "A25",
+          "x": 2175,
+          "y": -1041,
+          "z": -4368
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "fe72c856-cdd9-47a3-bebf-fa1621d9a115",
+      "tourId": "bd2323e9-e03f-40a9-db2f-08dbded32379",
+      "title": "A1",
+      "index": 1,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "urlPreview": "uploads/tours/bd2323e9e03f40a9db2f08dbded32379/38dbbb8e82234d66b5e4458b784bf611.jpg",
+      "urlImage": "uploads/tours/bd2323e9e03f40a9db2f08dbded32379/2dd79ac653a144df87fc59a0de59bd2e.jpg",
+      "urlAudio": "",
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "6cd762d9-88ab-4d81-bdc7-514726db4aaf",
+      "tourId": "bd2323e9-e03f-40a9-db2f-08dbded32379",
+      "title": "A25",
+      "index": 2,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "urlPreview": "uploads/tours/bd2323e9e03f40a9db2f08dbded32379/2c931a6fd1a94db989f7a6fc3c18df23.jpg",
+      "urlImage": "uploads/tours/bd2323e9e03f40a9db2f08dbded32379/81b333ab90d64a7eb653be7fec6a871d.jpg",
+      "urlAudio": "",
+      "linkHotspots": [
+        {
+          "id": "c6f7e990-c9a4-400b-bc56-0529aeba4f85",
+          "sceneId": "6cd762d9-88ab-4d81-bdc7-514726db4aaf",
+          "linkId": "8b49a7a9-b3ac-4f68-a8c9-6b2966851071",
+          "sceneIndex": 0,
+          "title": "A1 (2)",
+          "x": -87,
+          "y": -1129,
+          "z": 4864
+        }
+      ],
+      "infoHotspots": []
+    }
+  ]
+}
