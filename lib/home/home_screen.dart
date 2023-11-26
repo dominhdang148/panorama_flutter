@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:panorama_viewer/panorama_viewer.dart';
+import 'package:paranoma_study/services/coordinate_converter.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,26 +22,21 @@ class _HomeScreenState extends State<HomeScreen> {
           sensorControl: SensorControl.orientation,
           hotspots: [
             Hotspot(
-              longitude: 0,
-              latitude: 0,
-              // longitude: CoordinateConverter.toLongitude(0, 0),
-              // latitude: CoordinateConverter.toLatitude(
-              //   0,
-              //   ImageSizeGetter.getSize(
-              //     FileInput(
-              //       File('assets/panorama_0.jpg'),
-              //     ),
-              //   ).width.toDouble(),
-              // ),
+              longitude: CoordinateConverter.toLongitude(2175, -4368),
+              latitude: CoordinateConverter.toLatitude(2175, -1041, -4368),
               height: 40,
               width: 40,
               widget: IconButton(
                 onPressed: () async {},
-                icon: const Icon(Icons.arrow_upward),
+                icon: Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
               ),
             ),
           ],
-          child: Image.asset('assets/panorama_0.jpg'),
+          child: Image.asset('assets/a1.jpg'),
         ),
       ),
     );
