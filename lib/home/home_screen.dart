@@ -18,11 +18,11 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Center(
         child: PanoramaViewer(
-          animSpeed: 1.0,
-          sensorControl: SensorControl.orientation,
+          //animSpeed: 1.0,
+          // sensorControl: SensorControl.orientation,
           hotspots: [
             Hotspot(
-              longitude: CoordinateConverter.toLongitude(2175, -4368),
+              longitude: CoordinateConverter.toLongitude(2175, -1041, -4368),
               latitude: CoordinateConverter.toLatitude(2175, -1041, -4368),
               height: 40,
               width: 40,
