@@ -22,8 +22,22 @@ class _HomeScreenState extends State<HomeScreen> {
           // sensorControl: SensorControl.orientation,
           hotspots: [
             Hotspot(
-              longitude: CoordinateConverter.toLongitude(2175, -1041, -4368),
-              latitude: CoordinateConverter.toLatitude(2175, -1041, -4368),
+              longitude: CoordinateConverter.toLongitude(2985, -2332, -3256),
+              latitude: CoordinateConverter.toLatitude(2985, -2332, -3256),
+              height: 40,
+              width: 40,
+              widget: IconButton(
+                onPressed: () async {},
+                icon: Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+              ),
+            ),
+             Hotspot(
+              longitude: CoordinateConverter.toLongitude(-3842, -1850, 2596),
+              latitude: CoordinateConverter.toLatitude(-3842, -1850, 2596),
               height: 40,
               width: 40,
               widget: IconButton(
@@ -36,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ],
-          child: Image.asset('assets/a1.jpg'),
+          child: Image.asset('assets/panorama_0.jpg'),
         ),
       ),
     );
